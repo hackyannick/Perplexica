@@ -20,20 +20,20 @@ import { useChat } from '@/lib/hooks/useChat';
 const focusModes = [
   {
     key: 'webSearch',
-    title: 'All',
-    description: 'Searches across all of the internet',
+    title: 'Internet',
+    description: 'Internetsuche',
     icon: <Globe size={20} />,
   },
   {
     key: 'academicSearch',
-    title: 'Academic',
-    description: 'Search in published academic papers',
+    title: 'Wissenschaftlich',
+    description: 'Suche in Wissenschaftlichen Dokumenten',
     icon: <SwatchBook size={20} />,
   },
   {
     key: 'writingAssistant',
-    title: 'Writing',
-    description: 'Chat without searching the web',
+    title: 'Schreiben',
+    description: 'Chatten ohne Internetzugriff',
     icon: <Pencil size={16} />,
   },
   {
@@ -45,13 +45,13 @@ const focusModes = [
   {
     key: 'youtubeSearch',
     title: 'Youtube',
-    description: 'Search and watch videos',
+    description: 'Suche Videos auf YouTube',
     icon: <SiYoutube className="h-5 w-auto mr-0.5" />,
   },
   {
     key: 'redditSearch',
     title: 'Reddit',
-    description: 'Search for discussions and opinions',
+    description: 'Suche von Inhalten auf Reddit',
     icon: <SiReddit className="h-5 w-auto mr-0.5" />,
   },
 ];
