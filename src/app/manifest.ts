@@ -2,10 +2,10 @@ import type { MetadataRoute } from 'next';
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'Perplexica - Chat with the internet',
+    name: 'Search - Chat with the internet',
     short_name: 'Perplexica',
     description:
-      'Perplexica is an AI powered chatbot that is connected to the internet.',
+      'Search is an AI powered chatbot that is connected to the internet.',
     start_url: '/',
     display: 'standalone',
     background_color: '#0a0a0a',
