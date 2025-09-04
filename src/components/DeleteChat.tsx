@@ -37,7 +37,7 @@ const DeleteChat = ({
       });
 
       if (res.status != 200) {
-        throw new Error('Failed to delete chat');
+        throw new Error('Fehler beim Löschen des Chats');
       }
 
       const newChats = chats.filter((chat) => chat.id !== chatId);
@@ -92,7 +92,7 @@ const DeleteChat = ({
                     Delete Confirmation
                   </DialogTitle>
                   <Description className="text-sm dark:text-white/70 text-black/70">
-                    Are you sure you want to delete this chat?
+                    Sind sie sicher dass der Chat gelöscht werden soll?
                   </Description>
                   <div className="flex flex-row items-end justify-end space-x-4 mt-6">
                     <button
