@@ -206,7 +206,7 @@ class MetaSearchAgent implements MetaSearchAgentType {
           question = question.replace(/<think>.*?<\/think>/g, '');
 
           const res = await searchSearxng(question, {
-            language: 'en',
+            language: 'de',
             engines: this.config.activeEngines,
           });
 
