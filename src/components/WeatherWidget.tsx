@@ -42,7 +42,7 @@ const WeatherWidget = () => {
         if (result.state === 'granted') {
           navigator.geolocation.getCurrentPosition(async (position) => {
             const res = await fetch(
-              `https://api-bdc.io/data/reverse-geocode-client?latitude=${position.coords.latitude}&longitude=${position.coords.longitude}&localityLanguage=en`,
+              `https://api-bdc.io/data/reverse-geocode-client?latitude=${position.coords.latitude}&longitude=${position.coords.longitude}&localityLanguage=de`,
               {
                 method: 'GET',
                 headers: {
@@ -83,7 +83,7 @@ const WeatherWidget = () => {
       const data = await res.json();
 
       if (res.status !== 200) {
-        console.error('Error fetching weather data');
+        console.error('Fehler beim Laden der Wetter API');
         setLoading(false);
         return;
       }
@@ -148,8 +148,8 @@ const WeatherWidget = () => {
               {data.condition}
             </span>
             <div className="flex flex-row justify-between w-full mt-auto pt-1 border-t border-light-200 dark:border-dark-200 text-xs text-black/60 dark:text-white/60">
-              <span>Humidity: {data.humidity}%</span>
-              <span>Now</span>
+              <span>Luftfeuchtigkeit: {data.humidity}%</span>
+              <span>Jetzt</span>
             </div>
           </div>
         </>
