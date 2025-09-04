@@ -190,14 +190,14 @@ const Navbar = () => {
                   onClick={() => exportAsMarkdown(messages, title || '')}
                 >
                   <FileText size={17} className="text-[#24A0ED]" />
-                  Export as Markdown
+                  Exportieren als Markdown
                 </button>
                 <button
                   className="flex items-center gap-2 px-4 py-2 text-left hover:bg-light-secondary dark:hover:bg-dark-secondary transition-colors text-black dark:text-white rounded-lg font-medium"
                   onClick={() => exportAsPDF(messages, title || '')}
                 >
                   <FileDown size={17} className="text-[#24A0ED]" />
-                  Export as PDF
+                  Exportieren als PDF
                 </button>
               </div>
             </PopoverPanel>
