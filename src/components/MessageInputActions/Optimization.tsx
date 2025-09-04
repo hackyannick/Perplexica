@@ -12,20 +12,20 @@ import { useChat } from '@/lib/hooks/useChat';
 const OptimizationModes = [
   {
     key: 'speed',
-    title: 'Speed',
-    description: 'Prioritize speed and get the quickest possible answer.',
+    title: 'Geschwindigkeit',
+    description: 'Erhalten Sie schnellstmöglich eine Antwort.',
     icon: <Zap size={20} className="text-[#FF9800]" />,
   },
   {
     key: 'balanced',
-    title: 'Balanced',
-    description: 'Find the right balance between speed and accuracy',
+    title: 'Ausgewogen',
+    description: 'Finde die Balance zwischen Geschwindkeit und Genaugigkeit.',
     icon: <Sliders size={20} className="text-[#4CAF50]" />,
   },
   {
     key: 'quality',
-    title: 'Quality (Soon)',
-    description: 'Get the most thorough and accurate answer',
+    title: 'Qualität (deaktiviert, bald Verfügbar)',
+    description: 'Erhalten Sie Ergebnisse die möglichst genau sind ohne auf Geschwindikeit zu achten.',
     icon: (
       <Star
         size={16}
